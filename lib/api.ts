@@ -1,4 +1,4 @@
-const BASE_URL = (process.env.NEXT_PUBLIC_API_ORIGIN || "http://localhost:5000").replace(/\/$/, "");
+const BASE_URL = process.env.NEXT_PUBLIC_API_ORIGIN?.replace(/\/$/, "");
 
 type ApiOptions = { method?: string; body?: unknown; token?: string };
 
